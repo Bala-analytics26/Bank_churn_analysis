@@ -11,11 +11,11 @@ The recommendation is a 6-month pilot offering them a second product.
 
 ## Data
 Bank customer churn dataset, 10,000 rows, 14 columns.
-Source: Kaggle, 'https://www.kaggle.com/datasets/sidramazam/customer-churn-analysis-dataset'
+Source: Kaggle, https://www.kaggle.com/datasets/sidramazam/customer-churn-analysis-dataset
 
 ## Files
-- `churn_summary.pdf`: one-page summary. Open this first.
-- `churn_analysis.sql`: full SQL analysis (data checks, drivers, deep dive).
+- churn_summary.pdf: one-page summary. Open this first.
+- churn_analysis.sql: full SQL analysis (data checks, drivers, deep dive).
 
 ## Tools
 SQL (PostgreSQL)

@@ -298,9 +298,10 @@ FROM churn_clean;
 
 -- 4.5 - PILOT GROUP
 -- Q: What is the average balance of customers aged 46 to 60 with 1 product?
--- Finding: 995 total customers, 606 churned customers, 94,500.87 average balance
+-- Finding: 995 total customers, 606 churned customers, 94,500.87 average balance, 89,349.94 average churned balance
 SELECT count(customer_id) AS total_customers,
 sum(exited) AS churned_customers, 
-round(avg(balance),2) AS avg_balance
+round(avg(balance),2) AS avg_balance,
+round(avg(CASE WHEN exited=1 THEN balance END),2) AS avg_balance_churned
 FROM churn_clean
 WHERE (age BETWEEN 46 AND 60) AND (num_of_products=1);
